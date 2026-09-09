@@ -16,7 +16,11 @@ if config.config_file_name is not None:
 
 # add your model's MetaData object here
 from src.database import Base  # Import the Base from your database module
-from src.models import *
+from src.carts.models import Cart
+from src.products.models import Product, Vendor
+from src.users.models import User
+from src.orders.models import OrderHistory
+
 target_metadata = Base.metadata
 
 # other values from the config, defined by the needs of env.py,
