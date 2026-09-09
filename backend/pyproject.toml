@@ -7,11 +7,10 @@ authors = [
     { name = "Pratham Satani", email = "iamprathamsatani2002@gmail.com" }
 ]
 requires-python = ">=3.9"
-dependencies = []
-
-[project.scripts]
-backend = "backend:main"
-
-[build-system]
-requires = ["uv_build>=0.12.10,<0.13.0"]
-build-backend = "uv_build"
+dependencies = [
+    "alembic>=1.16.5",
+    "beanie>=2.0.1",
+    "fastapi[standard]>=0.128.8",
+    "firebase-admin>=7.5.0",
+    "psycopg2-binary>=2.9.12",
+]
